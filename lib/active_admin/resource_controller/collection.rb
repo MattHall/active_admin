@@ -64,7 +64,6 @@ module ActiveAdmin
 
         def search(chain)
           @search = chain.search(clean_search_params(params[:q]))
-          @search.relation
         end
 
         def clean_search_params(search_params)
